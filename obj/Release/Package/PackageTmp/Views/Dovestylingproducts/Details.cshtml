@@ -1,0 +1,42 @@
+﻿@model parneetkaur.Models.Dovestylingproduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dovestylingproduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Gidtcardno_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gidtcardno_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dovehairgel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dovehairgel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doveheatprotector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doveheatprotector)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Dovehairspray }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

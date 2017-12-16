@@ -1,0 +1,42 @@
+﻿@model parneetkaur.Models.Dovebathproduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dovebathproduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DoveSoap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoveSoap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoveShampoo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoveShampoo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoveConditioner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoveConditioner)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.C_Giftcardno_ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

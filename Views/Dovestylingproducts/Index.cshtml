@@ -1,0 +1,45 @@
+﻿@model IEnumerable<parneetkaur.Models.Dovestylingproduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Gidtcardno_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dovehairgel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doveheatprotector)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gidtcardno_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dovehairgel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Doveheatprotector)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Dovehairspray }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Dovehairspray }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Dovehairspray })
+        </td>
+    </tr>
+}
+
+</table>
